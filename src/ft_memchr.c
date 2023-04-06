@@ -6,11 +6,11 @@
 /*   By: seyildir <seyildir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/18 20:16:05 by seyildir      #+#    #+#                 */
-/*   Updated: 2022/11/30 16:17:49 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/04/06 10:03:51 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

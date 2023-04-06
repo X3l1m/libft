@@ -6,11 +6,11 @@
 /*   By: seyildir <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/19 17:40:51 by seyildir      #+#    #+#                 */
-/*   Updated: 2022/11/30 16:11:36 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/04/06 10:03:51 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

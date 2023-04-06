@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         ::::::::             #
-#    makefile                                           :+:    :+:             #
+#    Makefile                                           :+:    :+:             #
 #                                                      +:+                     #
 #    By: seyildir <seyildir@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/11/26 19:08:12 by seyildir      #+#    #+#                  #
-#    Updated: 2022/12/02 19:18:19 by seyildir      ########   odam.nl          #
+#    Updated: 2023/04/06 10:04:49 by seyildir      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ OBJ		= $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRC))
 ################################
 all: $(NAME)
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(SRC_DIR)/$(HEADER)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(HEADER)
 	@mkdir -p $(OBJ_DIR)
 	@$(COMPILE) -c $< -o $@
 	@echo "$(GREEN)Compiling $(RED)$(patsubst ft_%,%,$(basename $(notdir $<)))$(NC)"

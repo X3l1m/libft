@@ -6,11 +6,11 @@
 /*   By: seyildir <seyildir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/23 19:41:18 by seyildir      #+#    #+#                 */
-/*   Updated: 2022/12/02 19:55:50 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/04/06 10:03:17 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

@@ -6,11 +6,11 @@
 /*   By: seyildir <seyildir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/29 18:55:18 by seyildir      #+#    #+#                 */
-/*   Updated: 2022/12/02 19:18:32 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/04/06 10:03:51 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isprint(int c)
 {

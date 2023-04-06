@@ -6,11 +6,11 @@
 /*   By: seyildir <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/29 18:14:19 by seyildir      #+#    #+#                 */
-/*   Updated: 2022/12/02 19:23:48 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/04/06 10:03:51 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isascii(int c)
 {

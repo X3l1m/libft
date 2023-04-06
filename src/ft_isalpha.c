@@ -6,11 +6,11 @@
 /*   By: seyildir <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/05 20:14:11 by seyildir      #+#    #+#                 */
-/*   Updated: 2022/12/02 19:24:02 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/04/06 10:03:51 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isalpha(int c)
 {
