@@ -15,7 +15,6 @@ RED=\033[31m
 NC=\033[0m
 ################################
 NAME	= libft.a
-HEADER	= libft.h
 ################################
 CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror
@@ -35,7 +34,7 @@ OBJ		= $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRC))
 ################################
 all: $(NAME)
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(HEADER)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(OBJ_DIR)
 	@$(COMPILE) -c $< -o $@
 	@echo "$(GREEN)Compiling $(RED)$(patsubst ft_%,%,$(basename $(notdir $<)))$(NC)"
