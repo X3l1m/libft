@@ -6,17 +6,17 @@
 /*   By: seyildir <seyildir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/10 18:17:05 by seyildir      #+#    #+#                 */
-/*   Updated: 2023/04/06 10:03:51 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/04/28 19:11:32 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_atoi(const char *str)
+long	ft_atoi(const char *str)
 {
-	int			i;
 	short int	sy;
-	int			r;
+	int			i;
+	long		r;
 
 	r = 0;
 	i = 0;
@@ -35,10 +35,11 @@ int	ft_atoi(const char *str)
 
 /* int main()
 {
-char *n = "\t\v\f\r\n \f-06050";
+char *n = "2147483648";
 int i1 = atoi(n);
-int i2 = ft_atoi(n);
+long i2 = ft_atoi(n);
 
+printf("%ld", i2);
 if (i1 == i2)
 write(1, "yes", 3);
 else

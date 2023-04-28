@@ -6,7 +6,7 @@
 /*   By: seyildir <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 18:24:37 by seyildir      #+#    #+#                 */
-/*   Updated: 2023/04/20 20:24:47 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/04/28 18:55:24 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ int	ft_istrdigit(const char *str)
 		str++;
 	if (*str == '-' || *str == '+')
 		str++;
+	if (!*str)
+		return (0);
 	while (*str)
 		if (!ft_isdigit(*str++))
 			return (0);
