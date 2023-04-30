@@ -6,7 +6,7 @@
 #    By: seyildir <seyildir@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/11/26 19:08:12 by seyildir      #+#    #+#                  #
-#    Updated: 2023/04/06 10:04:49 by seyildir      ########   odam.nl          #
+#    Updated: 2023/04/30 05:28:12 by seyildir      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ $(NAME): $(OBJ)
 
 clean:
 	@echo Cleaning objects files...
-	@$(RM) $(OBJ)
+	@rm -rf $(OBJ_DIR)
 
 fclean: clean
 	@echo Deleting $(NAME)
