@@ -15,8 +15,9 @@
 
 # include <stdlib.h>
 # include <string.h>
-# include <stdio.h>
+# include <stdarg.h>
 # include <unistd.h>
+# include <stdio.h>
 # include <ctype.h>
 
 long	ft_atoi(const char *str);
@@ -55,9 +56,19 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 //get_next_line:
-char	*ft_strjoin_free(char *s1, char *s2, int free_val);
-int		check_line(char *str);
-char	*ft_strcut(char *str, int point);
 char	*get_next_line(int fd);
+char	*ft_strjoin_free(char *s1, char *s2, int free_val);
+char	*ft_strcut(char *str, int point);
+int		check_line(char *str);
+//ft_printf
+int		ft_printf(const char *typef, ...);
+int		hex_convert(unsigned long int arg, char typef);
+int		dec_convert(unsigned long int dec);
+int		flg_hexa(va_list arg, char typef);
+int		flg_unsigned(va_list arg);
+int		flg_decimal(va_list arg);
+int		flg_pointer(va_list arg);
+int		flg_string(va_list arg);
+int		flg_char(va_list arg);
 
 #endif
