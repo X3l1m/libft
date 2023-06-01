@@ -6,7 +6,7 @@
 /*   By: seyildir <seyildir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/18 19:01:57 by seyildir      #+#    #+#                 */
-/*   Updated: 2023/05/30 22:06:13 by ubuntu        ########   odam.nl         */
+/*   Updated: 2023/06/01 22:37:57 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,6 @@ int	flg_hexa(va_list arg, char typef)
 	arg_hex = va_arg(arg, unsigned int);
 	return (hex_convert(arg_hex, typef));
 }
-
 
 int	flg_unsigned(va_list arg)
 {

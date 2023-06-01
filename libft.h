@@ -6,7 +6,7 @@
 /*   By: seyildir <seyildir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/26 18:58:48 by seyildir      #+#    #+#                 */
-/*   Updated: 2023/04/28 19:07:18 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/06/01 22:40:08 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int		ft_toupper(int c);
 char	*get_next_line(int fd);
 char	*ft_strjoin_free(char *s1, char *s2, int free_val);
 char	*ft_strcut(char *str, int point);
-int		check_line(char *str);
+int		check_line_after(char *str);
 //ft_printf
 int		ft_printf(const char *typef, ...);
 int		hex_convert(unsigned long int arg, char typef);

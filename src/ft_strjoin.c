@@ -6,7 +6,7 @@
 /*   By: seyildir <seyildir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/26 22:46:04 by seyildir      #+#    #+#                 */
-/*   Updated: 2023/04/06 10:03:51 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/06/01 22:38:08 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (join);
 }
 
-
 char	*ft_strjoin_free(char *s1, char *s2, int free_val)
 {
-	char *new;
+	char	*new;
 
 	new = ft_strjoin(s1, s2);
 	if (free_val == 1 || free_val == 3)
 		free(s1);
 	if (free_val == 2 || free_val == 3)
 		free(s2);
-	return(new);
+	return (new);
 }
 
 /* char	*ft_strjoin_free(char *s1, char *s2)

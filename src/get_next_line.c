@@ -6,7 +6,7 @@
 /*   By: seyildir <seyildir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/02/25 23:08:09 by seyildir      #+#    #+#                 */
-/*   Updated: 2023/02/25 23:21:36 by seyildir      ########   odam.nl         */
+/*   Updated: 2023/06/01 22:40:08 by seyildir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #define BUFFER_SIZE 50
 
-int	check_line(char *str)
+int	check_line_after(char *str)
 {
 	int	i;
 
@@ -48,7 +48,7 @@ char	*read_line(int fd, char *mem)
 		mem = ft_strdup(buffer);
 	if (!mem)
 		return (NULL);
-	if (check_line(buffer))
+	if (check_line_after(buffer))
 		return (mem);
 	return (read_line(fd, mem));
 }
@@ -58,7 +58,7 @@ char	*find_next(char **mem)
 	char	*line;
 	int		i;
 
-	i = check_line(*mem);
+	i = check_line_after(*mem);
 	if (i <= 0)
 	{
 		line = ft_strdup(*mem);
@@ -84,7 +84,7 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || BUFFER_SIZE < 1 || BUFFER_SIZE > 2147483647)
 		return (NULL);
-	if (!mem || !check_line(mem))
+	if (!mem || !check_line_after(mem))
 		mem = read_line(fd, mem);
 	if (!mem)
 		return (NULL);
