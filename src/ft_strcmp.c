@@ -14,12 +14,12 @@
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
-	size_t	i;
-
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] && s2[i])
-		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	while (*s1 == *s2 && *s1 && *s2)
+	{
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
 }
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
@@ -31,7 +31,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (0);
 	while (s1[i] == s2[i] && s1[i] && s2[i] && n > i + 1)
 		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	return (s1[i] - s2[i]);
 }
 
 /* #include <stdio.h>
@@ -39,9 +39,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 int main()
 {
-	char a[] = "aeanema";
-	char b[] = "deaneme";
-	int s = 0;
-	printf("%d\n", ft_strncmp(a, b, s));
-	printf("%d\n", strncmp(a, b, s));
+	char a[] = "";
+	char b[] = "";
+	printf("%d\n", ft_strcmp(a, b));
+	printf("%d\n", strcmp(a, b));
 } */
