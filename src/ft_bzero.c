@@ -14,13 +14,16 @@
 
 void	ft_bzero(void *s, size_t n)
 {
+	unsigned char *c;
+
+	c = (unsigned char *)s;
 	while (n-- > 0)
-		*(char *)(s + n) = 0;
+		*c++ = 0;
 }
 
 /* int main()
 {
-	char d[]= "agamm";
-	ft_bzero(d, 3);
-	write(1, d, 7);
+	char d[] = "agamm";
+	ft_bzero(d, 5);
+	write(1, d, 6);
 } */
